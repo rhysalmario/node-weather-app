@@ -10,7 +10,8 @@ let forecast = (latitude, longitude, callback) => {
       callback(body.error.info, undefined);
     } else {
       let data = body.current;
-      callback(undefined, `${data.weather_descriptions[0]}. Temperature is ${data.temperature}. Feels like ${data.feelslike}`);
+      callback(undefined, `${data.weather_descriptions[0]}. Temperature is ${data.temperature}. Feels like ${data.feelslike}.
+        Humidity is ${data.humidity} with a ${data.precip}% chance of rain.`);
     }
   })
 }
