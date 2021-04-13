@@ -36,7 +36,7 @@ app.get('/about', (req, res) => {
 
 app.get('/help', (req, res) => {
   res.render('help', {
-    message: 'Suggem some tiddies',
+    message: 'Use the search box in the weather tab to look up your city and get the weather forecast.',
     title: 'Help',
     name: 'Rhys Almario'
   })
